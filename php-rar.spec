@@ -2,10 +2,10 @@
 %define soname %{modname}.so
 %define inifile A75_%{modname}.ini
 
-Summary:	RAR extension
+Summary:	RAR extension for PHP
 Name:		php-%{modname}
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/rar/
