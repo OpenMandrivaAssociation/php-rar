@@ -5,11 +5,11 @@
 Summary:	RAR extension for PHP
 Name:		php-%{modname}
 Version:	2.0.0
-Release:	%mkrel 0.0.RC1.1
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/rar/
-Source0:	http://pecl.php.net/get/%{modname}-%{version}RC1.tgz
+Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 BuildRequires:	php-devel >= 3:5.2.0
@@ -21,7 +21,7 @@ PHP extension for reading Rar archives using bundled unRAR library.
 
 %prep
 
-%setup -q -n %{modname}-%{version}RC1
+%setup -q -n %{modname}-%{version}
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 # fix permissions
