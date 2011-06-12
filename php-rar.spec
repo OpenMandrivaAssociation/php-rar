@@ -4,8 +4,8 @@
 
 Summary:	RAR extension for PHP
 Name:		php-%{modname}
-Version:	2.0.0
-Release:	%mkrel 6
+Version:	3.0.0
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/rar/
