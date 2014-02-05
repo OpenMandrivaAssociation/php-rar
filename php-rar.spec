@@ -4,17 +4,16 @@
 
 Summary:	RAR extension for PHP
 Name:		php-%{modname}
-Version:	3.0.1
-Release:	%mkrel 1
+Version:	3.0.2
+Release:	1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/rar/
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Source0:	http://pecl.php.net/get/rar-%{version}.tgz
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	file
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 PHP extension for reading Rar archives using bundled unRAR library.
@@ -42,7 +41,6 @@ phpize
 %make
 
 %install
-rm -rf %{buildroot}
 
 install -d %{buildroot}%{_sysconfdir}/php.d
 install -d %{buildroot}%{_libdir}/php/extensions
@@ -67,10 +65,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %clean
-rm -rf %{buildroot}
 
 %files 
-%defattr(-,root,root)
 %doc package*.xml tests CREDITS example.php
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
@@ -184,4 +180,5 @@ rm -rf %{buildroot}
 * Wed Feb 27 2008 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-1mdv2008.1
 + Revision: 175712
 - import php-rar
+
 
