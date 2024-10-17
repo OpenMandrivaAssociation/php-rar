@@ -8,7 +8,7 @@ Version:	3.0.2
 Release:	2
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/rar/
+URL:		https://pecl.php.net/package/rar/
 Source0:	http://pecl.php.net/get/rar-%{version}.tgz
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
